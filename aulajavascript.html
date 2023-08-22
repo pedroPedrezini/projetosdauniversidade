@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Atividade 5</title>
+</head>
+<body>
+
+
+
+    
+
+    <p id="materiastxt"></p>
+
+
+    <p id="materiaswhile"></p>
+
+    <p id="tabuada8"></p>
+
+    <p id="carro2"></p>
+
+    <script>
+
+        var genero = prompt('Digite M se for do sexo masculino ou F se for do sexo feminino:');
+
+        var materias = ["Lingua e linguagem", "Fundamentos de Programação", "Arquitetura de Computadores", "Legislação", "Economia(ead)"]
+
+       var carro = {nome: "Chevete", Potencia: "infinita", qualidade: "Muito foda", tração: "4x4", vidros: "fumê"}
+       
+       var caracteristicas;
+
+        var txt = ""
+        var text = ""
+        var iWhile = 0
+        var txtTabuada = ""
+        var txtCarro = ""
+        switch (genero){
+        case "M":
+            window.alert("Seja bem vindo!");
+            break;
+        
+        case "F":
+            window.alert("Seja bem vinda!");
+            break;
+        }
+
+        for (i = 0; i < materias.length; i++){
+            txt += materias[i] + "<br>";
+            document.getElementById("materiastxt").innerHTML = txt;
+        }
+
+        while(iWhile < materias.length){
+            text += materias[iWhile] + "<br>";
+            document.getElementById("materiaswhile").innerHTML = text
+            iWhile++;
+        }
+
+        for (i = 1; i <= 10; i++){
+            txtTabuada += i+ "x8 = " + i*8 + "<br>"
+            document.getElementById("tabuada8").innerHTML = txtTabuada;
+        }
+        
+        for (caracteristicas in carro){
+            txtCarro += carro[caracteristicas] + " ";
+        }
+        document.getElementById("carro2").innerHTML = txtCarro
+    </script>
+</body>
+</html>
