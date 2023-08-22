@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ola mundo</title>
+</head>
+<body>
+
+    <h1>Sem alterar</h1>
+
+    <button id="botaoEnviar">Não click</button>
+
+    <script>
+    
+        function alerta(){
+            alert("Bem-Vindo")
+        }
+    alerta()
+
+    var nome = "pedro";
+    var idade = 18;
+    var numero = "44991014629";
+    var notas = [23, 80, 100, 12.5];
+    var falso = 5 >10;
+    var cidades = ['Londrina', 'Curitiba', 'São salvador', 'Maringa'];
+    const cpf = "103.123.899-78";
+    console.log(cpf);
+    var titulo = document.querySelector("h1");
+    titulo.textContent = "alterada";
+    
+    function alerta2(){
+        alert("Você clicou no botão");
+    }
+    var botao = document.querySelector("#botaoEnviar");
+    botao.onclick = alerta2;
+
+    </script>
+</body>
+</html>
